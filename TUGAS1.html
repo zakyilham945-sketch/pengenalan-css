@@ -1,122 +1,39 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paket Hosting Pilihan</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 30px;
-        }
-
-        h2 {
-            color: #2196f3;
-            margin-bottom: 15px;
-        }
-
-        .hosting {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-        }
-
-        .paket {
-            width: 30%;
-            border: 1px solid #ddd;
-            text-align: center;
-        }
-
-        .paket h3 {
-            color: white;
-            padding: 15px 5px;
-            margin: 0;
-        }
-
-        .free h3 {
-            background-color: #2196f3;
-        }
-
-        .premium h3 {
-            background-color: #ff9800;
-        }
-
-        .profesional h3 {
-            background-color: #009b16;
-        }
-
-        .paket p {
-            text-align: left;
-            padding: 0 10px;
-            font-size: 13px;
-        }
-
-        .paket button {
-            width: 90%;
-            padding: 10px;
-            margin: 10px;
-            border: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        .free button {
-            background-color: #2196f3;
-        }
-
-        .premium button {
-            background-color: #ff9800;
-        }
-
-        .profesional button {
-            background-color: #009b16;
-        }
-
-        @media (max-width: 600px) {
-            .hosting {
-                flex-direction: column;
-            }
-
-            .paket {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h2>Paket Hosting Pilihan</h2>
+<h1>Paket Hosting Pilihan</h1>
 
-    <div class="hosting">
-
-        <div class="paket free">
-            <h3>Paket Free<br><small>(Gratis)</small></h3>
-            <p>Batas Waktu 3 Bulan</p>
-            <p>Kapasitas 200 MB</p>
-            <p>Tidak ada Backup Data</p>
-            <button>Pesan Sekarang</button>
-        </div>
-
-        <div class="paket premium">
-            <h3>Paket Premium<br><small>Rp 30.000 / Tahun</small></h3>
-            <p>Batas Waktu 1 Tahun</p>
-            <p>Kapasitas 1 GB</p>
-            <p>Dilengkapi Backup Data</p>
-            <button>Pesan Sekarang</button>
-        </div>
-
-        <div class="paket profesional">
-            <h3>Paket Profesional<br><small>Rp 50.000 / Tahun</small></h3>
-            <p>Batas Waktu 2 Tahun</p>
-            <p>Kapasitas 3 GB</p>
-            <p>Dilengkapi Backup Data</p>
-            <p>Bonus Domain</p>
-            <button>Pesan Sekarang</button>
-        </div>
-
+<div class="box">
+    <div class="kartu biru">
+        <h2>Paket Free</h2>
+        <p>4 Bulan</p>
+        <p>Kuota 200 MB<br>
+        Tidak ada backup data</p>
+        <button>Pesan Sekarang</button>
     </div>
+
+    <div class="kartu oranye">
+        <h2>Paket Premium</h2>
+        <p>Rp 50.000/Tahun</p>
+        <p>Kuota 1 GB<br>
+        Dilengkapi Backup Data</p>
+        <button>Pesan Sekarang</button>
+    </div>
+
+    <div class="kartu hijau">
+        <h2>Paket Profesional</h2>
+        <p>Rp 75.000/Tahun</p>
+        <p>Kuota 2 GB<br>
+        Dilengkapi Backup Data<br>
+        Bonus Domain</p>
+        <button>Pesan Sekarang</button>
+    </div>
+</div>
 
 </body>
 </html>
