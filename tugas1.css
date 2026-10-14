@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: stretch; /* Semua kartu tinggi sama */
+}
+
+.kartu {
+    width: 180px;
+    border: 1px solid #ddd; /* Garis tepi */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column; /* Susun ke bawah */
+}
+
+.kartu h2 {
+    color: white;
+    padding: 15px 10px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.kartu p {
+    padding: 12px;
+    margin: 0;
+    font-size: 15px;
+    flex-grow: 1; /* Isi ruang kosong */
+}
+
+.kartu button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: auto; /* Tombol tetap di bawah */
+}
+
+/* Warna masing-masing */
+.biru h2, .biru button {
+    background-color: #0066ff;
+}
+
+.oranye h2, .oranye button {
+    background-color: #ff9900;
+}
+
+.hijau h2, .hijau button {
+    background-color: #00aa33;
+}
